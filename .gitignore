@@ -3,3 +3,4 @@
 .pytest_cache
 *__pycache__
 my_env/my_env/
+
