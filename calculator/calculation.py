@@ -6,3 +6,9 @@ class Calculation:
 
     def get_result(self):
         return self.operation(self.a, self.b)
+
+    def perform(self):
+        return self.get_result()
+
+    def __repr__(self):
+        return f"Calculation({self.a}, {self.b}, {self.operation.__name__})"

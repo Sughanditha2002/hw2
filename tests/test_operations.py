@@ -26,7 +26,7 @@ def test_operation_divide():
     """ Test the division operation using the Calculation class. """
     calculation = Calculation(Decimal('15'), Decimal('7'), divide)
     result = calculation.perform()
-    expected_result = Decimal('2.14').quantize(Decimal('0.01'))
+    expected_result = Decimal('2.14')  # Adjust expected to match the defined precision
     assert result == expected_result, (
         f"Divide operation failed: expected {expected_result}, got {result}" )
 
