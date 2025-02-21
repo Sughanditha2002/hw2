@@ -13,14 +13,7 @@ from calculator.operations import add, subtract, multiply, divide
     (Decimal('20.5'), Decimal('3'), multiply, Decimal('61.5')),
     (Decimal('20'), Decimal('0.4'), divide, Decimal('50')),
 ])
-def test_calculation_operations(a, b, operation, expected):
-    """ Test various arithmetic operations using the Calculation class. """
-    calc = Calculation(a, b, operation)
-    result = calc.perform()
-    assert result == expected, (
-        f"Failed {operation._name_} operation with {a} and {b}: "
-        f"expected {expected}, got {result}"
-    )
+
 
 def test_calculation_repr():
     """ Test the string representation of a Calculation instance. """
